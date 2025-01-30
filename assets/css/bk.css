@@ -1,0 +1,123 @@
+
+/*education internship other section of timeline in css*/
+.timeline {
+    position: relative;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    background-color: var(--icon-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .timeline-container {
+    position: relative;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+  
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--icon-color);
+    border: 4px solid var(--navlist-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 0;
+    text-align: right;
+    border-right: var(--navlist-color) 5px solid;
+  }
+  
+  .right {
+    left: 50%;
+    border-left: var(--navlist-color) 5px solid;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 20px;
+    border: medium solid var(--back-color-text);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--back-color-text);
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 20px;
+    border: medium solid var(--back-color-text);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--back-color-text) transparent transparent;
+  }
+  
+  .right::after {
+    left: -19px;
+  }
+  
+  .content {
+    /* background-color: var(--back-color-text); */
+    position: relative;
+    /* border-radius: 6px; */
+  }
+
+
+  <section class="timeline bd-grid">
+  <h2 class="section-title timeline-title">ช่วงเวลา</h2>
+  <div class="timeline-container">
+      <div class="container left">
+          <div class="content">
+              <h1> RGPV </h1>
+              <h3>B.Tech in Artificaial Intelligence and Data Science from Mahakal Institute of Technology,
+                  Ujjain
+              </h3>
+              <h2><i class="ri-calendar-event-fill"></i> 2021-25 | Pursuing </h2>
+          </div>
+      </div>
+      <div class="container right">
+          <div class="content">
+              <h1> ISC </h1>
+              <h3>Senior Secondary Education in PCM Stream from Nirmala Convent School, Ujjain
+              </h3>
+              <h2><i class="ri-calendar-event-fill"></i> 2019-21 | Completed </h2>
+          </div>
+      </div>
+      <div class="container left">
+          <div class="content">
+              <h1> ICSE </h1>
+              <h3>Higher Secondary Education from Nirmala Convent School, Ujjain
+              </h3>
+              <h2><i class="ri-calendar-event-fill"></i> 2017-19 | Completed </h2>
+          </div>
+      </div>
+  </div>
+
+</section>
