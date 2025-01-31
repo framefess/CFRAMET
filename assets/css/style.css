@@ -538,6 +538,7 @@ ul.education__container li .descr::before {
     width: 100px;
     height: 100px;
     grid-template-rows: 50px 50px;
+    font-size: var(--smaller-font-size);
   }
   .skill_content img,
   .tool_content img {
@@ -556,6 +557,10 @@ ul.education__container li .descr::before {
     grid-template-columns: repeat(5, 1fr);
     margin-left: 10px;
     margin-right: auto;
+  }
+  .skill_content,
+  .tool_content {
+    font-size: var(--smaller-font-size);
   }
 }
 @media screen and (min-width: 768px) {
@@ -585,6 +590,7 @@ ul.education__container li .descr::before {
     width: 150px;
     height: 150px;
     grid-template-rows: 100px 50px;
+    font-size: var(--smaller-font-size);
   }
   .skill_content img,
   .tool_content img {
@@ -593,7 +599,6 @@ ul.education__container li .descr::before {
   }
 }
 @media screen and (min-width: 992px) {
-
   .skill_container {
     grid-template-columns: repeat(5, 1fr);
   }
@@ -604,7 +609,9 @@ ul.education__container li .descr::before {
   .education,
   .skill,
   .tool,
-  .footer {
+  .footer,
+  .skill_content:not(),
+  .tool_content:not() {
     font-size: calc(var(--large-font-size) + 0.5rem);
   }
   .home_img img {
